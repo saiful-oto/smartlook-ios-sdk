@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "analytics-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/smartlook/analytics-swift-package.git",
+      "state" : {
+        "revision" : "d02582ad6d583495d9072c0ac0bfa411c842084b",
+        "version" : "2.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}
