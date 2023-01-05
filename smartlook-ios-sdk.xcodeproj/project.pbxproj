@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		4E9D7CF92966B892006DC880 /* smartlook_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9D7CF82966B892006DC880 /* smartlook_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E9D7D012966B8E5006DC880 /* SmartlookAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9D7D002966B8E5006DC880 /* SmartlookAnalytics */; };
+		4E9D7D032966BAAF006DC880 /* SmartlookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D7D022966BAAF006DC880 /* SmartlookService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E9D7CF52966B892006DC880 /* smartlook_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = smartlook_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9D7CF82966B892006DC880 /* smartlook_ios_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smartlook_ios_sdk.h; sourceTree = "<group>"; };
+		4E9D7D022966BAAF006DC880 /* SmartlookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartlookService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9D7CF82966B892006DC880 /* smartlook_ios_sdk.h */,
+				4E9D7D022966BAAF006DC880 /* SmartlookService.swift */,
 			);
 			path = "smartlook-ios-sdk";
 			sourceTree = "<group>";
@@ -98,6 +101,7 @@
 				TargetAttributes = {
 					4E9D7CF42966B892006DC880 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9D7D032966BAAF006DC880 /* SmartlookService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +271,7 @@
 		4E9D7CFD2966B892006DC880 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -285,6 +291,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +300,7 @@
 		4E9D7CFE2966B892006DC880 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
